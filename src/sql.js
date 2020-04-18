@@ -6,10 +6,10 @@ const mysql = require('mysql');
  */
 function queryDbColumns(dbName, tableName, callBack) {
 	const connection = mysql.createConnection({
-		host: '192.168.80.234',
-		port: '3366',
+		host: '',
+		port: '3306',
 		user: 'root',
-		password: 'careC@1234',
+		password: '',
 	});
 	console.log('连接数据库...');
 	connection.connect();
