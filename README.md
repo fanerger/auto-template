@@ -3,5 +3,7 @@
 
 改下代码可以支持其他数据库，其他web框架
 ***
-cmd: node app db=dbName table=tableName fileName=fileName(default test)
+### cmd: node app db=dbName table=tableName fileName=fileName(default test)
+#### 示例图
   
+![database](https://github.com/fanerger/vue-mysql-template/blob/master/img_db.jpg)
