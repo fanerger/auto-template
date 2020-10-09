@@ -14,7 +14,7 @@ function queryDbColumns(dbName, tableName, callBack) {
 	console.log('连接数据库...');
 	connection.connect();
 	// 查询表结构
-	const sql = `select column_name, column_comment from information_schema.columns where table_schema ='${dbName}'  and table_name = '${tableName}' ;`;
+	const sql = `select column_name, column_comment from information_schema.columns where table_schema ='${dbName}'  and table_name = '${tableName}' ORDER BY ORDINAL_POSITION ;`;
 	console.log('查询表结构...');
 	connection.query(sql, function (err, columns) {
 		if (err) {
